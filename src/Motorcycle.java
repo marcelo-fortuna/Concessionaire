@@ -47,4 +47,13 @@ public class Motorcycle extends Vehicle {
         System.out.println("Disponível: " + disponible);
     }
 
+    /**
+     * Override method of class Vehicle
+     */
+    @Override
+    public void showData() {
+        System.out.println("Modelo: " + model);
+        System.out.println("Volume do baú: " + chestVolume);
+        System.out.println("Disponível: " + (disponible ? "Sim" : "Não"));
+    }
 }

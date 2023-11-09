@@ -30,8 +30,12 @@ public class Vehicle {
      */
     public void showVehicleData() {
         System.out.println("Marca: " + brand);
-        System.out.println("Model: " + model);
+        System.out.println("Modelo: " + model);
         System.out.println("Ano: " + year);
         System.out.println("Valor: " + value);
+    }
+
+    public void showData() {
+        System.out.println("É um véiculo do modelo: " + model);
     }
 }

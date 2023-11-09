@@ -6,8 +6,8 @@
 public class Truck extends Vehicle {
 
     String typeOfTruckLoad;
-    float numberOfAxes;
-    int capacity;
+    int numberOfAxes;
+    float capacity;
     boolean disponible;
 
     /**
@@ -21,7 +21,7 @@ public class Truck extends Vehicle {
      * @param capacity
      * @param disponible
      */
-    public Truck(String brand, String model, int year, float value, String typeOfTruckLoad, float numberOfAxes, int capacity, boolean disponible) {
+    public Truck(String brand, String model, int year, float value, String typeOfTruckLoad, int numberOfAxes, float capacity, boolean disponible) {
         super(brand, model, year, value);
 
         this.typeOfTruckLoad = typeOfTruckLoad;
@@ -39,6 +39,13 @@ public class Truck extends Vehicle {
         System.out.println("Tipo de carga: " + typeOfTruckLoad);
         System.out.println("Número de eixos: " + numberOfAxes);
         System.out.println("Capacidade: " + capacity);
+        System.out.println("Disponível: " + (disponible ? "Sim" : "Não"));
+    }
+
+    @Override
+    public void showData() {
+        System.out.println("Modelo: " + model);
+        System.out.println("Número de eixos: " + numberOfAxes);
         System.out.println("Disponível: " + (disponible ? "Sim" : "Não"));
     }
 }

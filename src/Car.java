@@ -38,4 +38,13 @@ public class Car extends Vehicle {
         System.out.println("Potência: " + power);
         System.out.println("Volume do porta malas: " + trunkVolume);
     }
+
+    /**
+     * Override method of class Vehicle
+     */
+    @Override
+    public void showData() {
+        System.out.println("Modelo: " + model);
+        System.out.println("Potência: " + power);
+    }
 }
