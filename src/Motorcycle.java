@@ -10,7 +10,7 @@ public class Motorcycle extends Vehicle {
     String type;
     int chestVolume;
     float power;
-    boolean disponible;
+    boolean available;
 
     /**
      * Constructor method to implement inheritance of Vehicle SuperClass.
@@ -22,16 +22,16 @@ public class Motorcycle extends Vehicle {
      * @param type
      * @param chestVolume
      * @param power
-     * @param disponible
+     * @param available
      */
-    public Motorcycle(String brand, String model, int year, float value, String chassis, String type, int chestVolume, float power, boolean disponible) {
+    public Motorcycle(String brand, String model, int year, float value, String chassis, String type, int chestVolume, float power, boolean available) {
         super(brand, model, year, value);
 
         this.chassis = chassis;
         this.type = type;
         this.chestVolume = chestVolume;
         this.power = power;
-        this.disponible = disponible;
+        this.available = available;
     }
 
     /**
@@ -44,7 +44,7 @@ public class Motorcycle extends Vehicle {
         System.out.println("Tipo: " + type);
         System.out.println("Potência: " + power);
         System.out.println("Volume do baú: " + chestVolume);
-        System.out.println("Disponível: " + disponible);
+        System.out.println("Disponível: " + available);
     }
 
     /**
@@ -54,6 +54,6 @@ public class Motorcycle extends Vehicle {
     public void showData() {
         System.out.println("Modelo: " + model);
         System.out.println("Volume do baú: " + chestVolume);
-        System.out.println("Disponível: " + (disponible ? "Sim" : "Não"));
+        System.out.println("Disponível: " + (available ? "Sim" : "Não"));
     }
 }

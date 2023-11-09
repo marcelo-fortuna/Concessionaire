@@ -8,7 +8,7 @@ public class Truck extends Vehicle {
     String typeOfTruckLoad;
     int numberOfAxes;
     float capacity;
-    boolean disponible;
+    boolean available;
 
     /**
      * Constructor method to implement inheritance of Vehicle SuperClass.
@@ -19,15 +19,15 @@ public class Truck extends Vehicle {
      * @param typeOfTruckLoad
      * @param numberOfAxes
      * @param capacity
-     * @param disponible
+     * @param available
      */
-    public Truck(String brand, String model, int year, float value, String typeOfTruckLoad, int numberOfAxes, float capacity, boolean disponible) {
+    public Truck(String brand, String model, int year, float value, String typeOfTruckLoad, int numberOfAxes, float capacity, boolean available) {
         super(brand, model, year, value);
 
         this.typeOfTruckLoad = typeOfTruckLoad;
         this.numberOfAxes = numberOfAxes;
         this.capacity = capacity;
-        this.disponible = disponible;
+        this.available = available;
     }
 
     /**
@@ -39,13 +39,13 @@ public class Truck extends Vehicle {
         System.out.println("Tipo de carga: " + typeOfTruckLoad);
         System.out.println("Número de eixos: " + numberOfAxes);
         System.out.println("Capacidade: " + capacity);
-        System.out.println("Disponível: " + (disponible ? "Sim" : "Não"));
+        System.out.println("Disponível: " + (available ? "Sim" : "Não"));
     }
 
     @Override
     public void showData() {
         System.out.println("Modelo: " + model);
         System.out.println("Número de eixos: " + numberOfAxes);
-        System.out.println("Disponível: " + (disponible ? "Sim" : "Não"));
+        System.out.println("Disponível: " + (available ? "Sim" : "Não"));
     }
 }

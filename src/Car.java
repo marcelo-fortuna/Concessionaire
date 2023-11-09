@@ -9,6 +9,7 @@ public class Car extends Vehicle {
     String chassis;
     float power;
     int trunkVolume;
+    boolean available;
 
     /**
      * Constructor method to implement inheritance of Vehicle SuperClass.
@@ -19,13 +20,15 @@ public class Car extends Vehicle {
      * @param chassis
      * @param power
      * @param trunkVolume
+     * @param available
      */
-    public Car(String brand, String model, int year, float value, String chassis, float power, int trunkVolume) {
+    public Car(String brand, String model, int year, float value, String chassis, float power, int trunkVolume, boolean available) {
         super(brand, model, year, value);
         
         this.chassis = chassis;
         this.power = power;
         this.trunkVolume = trunkVolume;
+        this.available = available;
     }
 
     /**
@@ -46,5 +49,6 @@ public class Car extends Vehicle {
     public void showData() {
         System.out.println("Modelo: " + model);
         System.out.println("Potência: " + power);
+        System.out.println("Disponível: " + (available ? "Sim" : "Não"));
     }
 }
